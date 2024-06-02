@@ -24,7 +24,7 @@ include 'database/dbconfig.php';
         rel="stylesheet">
 
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://localhost/test/admin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/TaxMapping/admin/css/style.css">
 </head>
 <body id="page-top">
 
