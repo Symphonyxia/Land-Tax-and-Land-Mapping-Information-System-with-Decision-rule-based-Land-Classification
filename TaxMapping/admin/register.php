@@ -75,9 +75,10 @@ include('includes/navbar.php');
 
 <div class="container-fluid">
 <?php if (!isset($_GET['print'])) { ?>
-  <div class="row justify-content-center  print-hide">
-  <div class="card shadow mb-4">
-    <div class="card-header py-3">
+  <div class="row my-3 justify-content-center  print-hide">
+  <div class="col-lg-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary"> Admin Profile
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile"> Add Profile
         </button>

@@ -192,25 +192,25 @@ include ('includes/navbar.php');
                                 class="btn btn-primary btn-sm my-2 buton"> <i
                                     class="fa-solid fa-location-dot"></i></button></h5>
                         <label for="current_loc">Current Location:</label>
-                        <input id="current_loc" class="form-control" name="current_loc" required readonly>
+                        <input id="current_loc" class="form-control" name="current_loc">
                     </div>
 
 
                     <div class="form-group">
                         <label for="longitude">Longitude:</label>
-                        <input id="longitude" class="form-control" name="longitude" required readonly>
+                        <input id="longitude" class="form-control" name="longitude" >
                     </div>
                     <div class="form-group">
                         <label for="latitude">Latitude:</label>
-                        <input id="latitude" class="form-control" name="latitude" required readonly>
+                        <input id="latitude" class="form-control" name="latitude" >
                     </div>
                     <div class="form-group">
                         <label for="altitude">Altitude:</label>
-                        <input id="altitude" class="form-control" name="altitude" required readonly>
+                        <input id="altitude" class="form-control" name="altitude" >
                     </div>
                     <div class="form-group">
                         <label for="accuracy">Precision:</label>
-                        <input id="accuracy" class="form-control" name="accuracy" required readonly>
+                        <input id="accuracy" class="form-control" name="accuracy" >
                     </div>
 
                 </div>
