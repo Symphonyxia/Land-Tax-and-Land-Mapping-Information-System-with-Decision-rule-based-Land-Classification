@@ -84,23 +84,33 @@ if (isset($_POST['map_update_btn'])) {
   $altitude = $_POST['altitude'];
   $accuracy = $_POST['accuracy'];
 
+  $query = "UPDATE landinfo SET district='$district', barangay='$barangay', section_no='$section_no', lot_no='$lot_no',
+      classification='$classification', kinds='$kinds',
+      subclass='$subclass', area='$area', unit_val='$unit_val', assess_level='$assess_level', assess_val='$assess_val', market_val='$market_val',
+      payables='$payables', structures='$structures', machinery='$machinery', factors='$factors', current_loc='$current_loc', longitude='$longitude', latitude='$latitude', altitude='$altitude', accuracy='$accuracy' WHERE land_id = '$land_id' ";
 
-
-  $query = "UPDATE landinfo SET district='$district',barangay='$barangay', section_no='$section_no',lot_no='$lot_no',
-      classification='$classification',kinds='$kinds',
-      subclass='$subclass', area='$area',unit_val='$unit_val',assess_level='$assess_level',assess_val='$assess_val',market_val='$market_val',
-      payables='$payables',structures='$structures',machinery='$machinery', factors='$factors', current_loc='$current_loc', longitude='$longitude',latitude='$latitude', altitude='$altitude', accuracy='$accuracy' WHERE land_id = '$land_id' ";
-  $query_run = mysqli_query($connection, $query);
-
-  if ($query_run) {
-      $_SESSION['success'] = "Your Data is Updated";
-      header('Location: map.php');
-  } else {
-      $_SESSION['status'] = "Your Data is NOT Updated";
-      header('Location: map.php');
+  try {
+      $query_run = mysqli_query($connection, $query);
+      if ($query_run) {
+          $_SESSION['success'] = "Your Data is Updated";
+          header('Location: map.php');
+      } else {
+          $_SESSION['status'] = "Your Data is NOT Updated";
+          header('Location: map.php');
+      }
+  } catch (mysqli_sql_exception $e) {
+      // Check if the error is related to foreign key constraint
+      if ($e->getCode() === 1451) { // MySQL error code for foreign key constraint violation
+          // Display a danger message indicating the constraint violation
+          $_SESSION['status'] = "Existing data on tax payment history. Cannot change the lot number.";
+          header('Location: map.php');
+      } else {
+          // For other database errors, you can display a generic error message
+          $_SESSION['status'] = "An error occurred while processing your request. Please try again later.";
+          header('Location: map.php');
+      }
   }
 }
-
 
 
 

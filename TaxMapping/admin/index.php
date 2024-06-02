@@ -122,7 +122,7 @@ $data = array_filter($data, function ($row) {
 ?>
 
 <div class="row">
-    <div id="search-bar" style="margin-left: 15px; padding: 25px;">
+    <div id="search-bar" style="margin-left: 20px; padding: 25px;">
         <form method="post" action="" id="search-form">
             <label for="barangay">Barangay:</label>
             <select name="barangay" id="barangay">
@@ -299,18 +299,16 @@ $data = array_filter($data, function ($row) {
     </div>
     <br>
     <br>
-    <div class="row">
         <div class="col-md-6">
-            <div style="width: 100%; padding: 5px; box-sizing: border-box;">
+        <div style="width: 45%;">
                 <canva id="histogram-diagram" class="chart-container"></canva>
             </div>
         </div>
         <div class="col-md-6">
-            <div style="width: 100%; padding: 5px; box-sizing: border-box;">
+            <div style="width: 45%;">
                 <div id="boxplot-diagram" class="chart-container"></div>
             </div>
         </div>
-    </div>
     <br>
     <?php include ('decision_tree.php'); ?>
     <br>

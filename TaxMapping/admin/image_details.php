@@ -176,7 +176,6 @@ include('includes/navbar.php');
         </table>
     </div>
     <h4><strong>Related Land Data</strong></h4>
-<br>
     <div class="table-container">
     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <?php if (!empty($landinfoData)): ?>

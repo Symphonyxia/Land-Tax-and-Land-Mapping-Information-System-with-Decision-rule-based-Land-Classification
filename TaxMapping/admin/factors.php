@@ -4,10 +4,13 @@ include('includes/header.php');
 include('includes/navbar.php');
 ?>
 
+
 <form action="code.php" method="POST">
 
     <div class="modal-body">
+    <a href="map.php" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Back</a>
         <div class="form-group">
+            <br>
             <label for="barangay">Barangay</label>
             <select name="barangay" id="barangay" class="form-control">
                 <option value="Abangay">Abangay</option>
@@ -75,6 +78,7 @@ include('includes/navbar.php');
         </div>
 
         <button type="submit" name="factaddbtn" class="btn btn-primary">Save</button>
+
 
 </form>
 
