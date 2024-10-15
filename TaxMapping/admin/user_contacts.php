@@ -7,7 +7,7 @@ include('user_include/navbar.php');
 <style>
       body {
         background-color: #f0f0f0; 
-        background-image: url('gallery/admin.jpg'); /* Replace 'path/to/your/image.jpg' with your image file path */
+        background-image: url('gallery/dash.png'); /* Replace 'path/to/your/image.jpg' with your image file path */
         background-size: cover;/* Set the background color of the body */
     }
     .container {
