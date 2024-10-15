@@ -9,7 +9,7 @@
         }
 
         #content-wrapper {
-            background-image: url('gallery/admin.jpg');
+            background-image: url('gallery/dash.png');
             /* Replace 'path/to/your/image.jpg' with your image file path */
             background-size: cover;
             /* Adjusts the size of the background image to cover the entire body */
