@@ -1,4 +1,4 @@
-# Land-Tax-and-Land-Mapping-with-Decision-based-Information-System
+# Land-Tax-and-Land-Mapping-with-Decision-Rule-based-Information-System
 
 ## Synopsis
 Land valuation is crucial in the real estate industry and influences decision-making, property taxation, and urban development. Location quality, topography, climate, and water supply affect land value. In the Philippines, the Municipal Assessors Office (MAO) computes land value and tax based on the Manual on Real Property Appraisal and Assessment Operations (MRPAAO). However, the Schedule of Market Values needs updating every three years for accuracy, which is often not implemented, leading to unreliable property valuations and fiscal challenges. 
